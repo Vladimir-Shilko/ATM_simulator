@@ -11,10 +11,7 @@ public class ATM {
     private Scanner scanner;
     private int atmLimit;
     Database database;
-//    public static void main(String[] args) {
-//        ATM atm = new ATM();
-//        atm.run();
-//    }
+
     public ATM() {
         userMap = new HashMap<>();
         scanner = new Scanner(System.in);
@@ -128,6 +125,7 @@ public class ATM {
                             }
                             if (amount > atmLimit) {
                                 System.out.println("Превышен лимит. Попробуйте снова.");
+
                                 continue;
                             }
                             break;
